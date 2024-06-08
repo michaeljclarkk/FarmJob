@@ -3,7 +3,7 @@ Remote Monitoring and Control System for Automatic Fill Reservoir
 # Scope of Work
 ## Objective
 To implement a remote monitoring and control system for an automatic fill reservoir using Raspberry Pis, Teltonika 4G/LTE Ethernet Gateways, and a secure VPN connection. The system will include a web-based dashboard for monitoring and control accessible via smartphone and PC.
-![NetDiag](images\image.png)
+![NetDiag](images/image.png)
 ## Components and Hardware
 ### Raspberry Pi Units
 - Two (2) Raspberry Pi units with necessary peripherals (power supplies, SD cards, etc.)
@@ -22,7 +22,7 @@ To implement a remote monitoring and control system for an automatic fill reserv
 - Dynamic DNS (DDNS) configuration for remote access
 
 ## Software and Configuration
-###    Raspberry Pi Setup
+### Raspberry Pi Setup
 - Installation of Raspberry Pi OS on each unit
 - Installation of necessary packages (ssh, python, requests, flask)
 
@@ -44,15 +44,15 @@ To implement a remote monitoring and control system for an automatic fill reserv
 - Integration of RESTful APIs for communication between RPis and dashboard
 
 ## Testing and Implementation
-###    Connectivity Testing
+### Connectivity Testing
 - Verification of VPN tunnel establishment
 - DDNS setup and access verification
 
-###    Functionality Testing
+### Functionality Testing
 - Simulation of float switch activations
 - Verification of correct signal transmission and pump control
 
-###    Monitoring and Logging
+### Monitoring and Logging
 - Implementation of logging for sensor statuses and control actions
 - Ongoing monitoring and troubleshooting
 
