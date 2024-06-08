@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Reservoir Status</h1>
+    <p>High Level: {{ reservoir_status.high_level }}</p>
+    <p>Low Level: {{ reservoir_status.low_level }}</p>
+
+    <h1>Pump Status</h1>
+    <p>Fault: {{ pump_status.pump_fault }}</p>
+
+    <h1>Control Pump</h1>
+    <form action="/control_pump" method="post">
+        <button type="submit" name="command" value="start">Start Pump</button>
+        <button type="submit" name="command" value="stop">Stop Pump</button>
+    </form>
+</body>
+</html>
