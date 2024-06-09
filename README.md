@@ -74,7 +74,7 @@ To implement a remote monitoring and control system for an automatic fill reserv
 
 ```bash
 ssh pi@<raspberry_pi_ip_address>
-```
+``` 
 
 2. Install RPi.GPIO:
 

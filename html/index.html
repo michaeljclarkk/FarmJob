@@ -1,20 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring and Control Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Reservoir Status</h1>
-    <p>High Level: {{ reservoir_status.high_level }}</p>
-    <p>Low Level: {{ reservoir_status.low_level }}</p>
-
-    <h1>Pump Status</h1>
-    <p>Fault: {{ pump_status.pump_fault }}</p>
-
-    <h1>Control Pump</h1>
-    <form action="/control_pump" method="post">
-        <button type="submit" name="command" value="start">Start Pump</button>
-        <button type="submit" name="command" value="stop">Stop Pump</button>
-    </form>
+    <header>
+        <img src="ljc-electrical-logo.png" alt="LJC Electrical Logo" class="logo">
+        <h1>Monitoring and Control Dashboard</h1>
+    </header>
+    <main>
+        <section class="parallax">
+            <div class="content">
+                <h2>Reservoir and Pump Control</h2>
+                <p>Monitor and control your reservoir and pumping system efficiently.</p>
+            </div>
+        </section>
+        <section class="info">
+            <div class="card">
+                <h3>Reservoir Status</h3>
+                <p>High Level: {{ reservoir_status.high_level }}</p>
+                <p>Low Level: {{ reservoir_status.low_level }}</p>
+            </div>
+            <div class="card">
+                <h3>Pump Status</h3>
+                <p>Fault: {{ pump_status.pump_fault }}</p>
+            </div>
+            <div class="card">
+                <h3>Control Pump</h3>
+                <form action="/control_pump" method="post">
+                    <button type="submit" name="command" value="start">Start Pump</button>
+                    <button type="submit" name="command" value="stop">Stop Pump</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <center>
+            &copy; Copyright LJC Electrical 2024 | Made by Michael Clark
+        </center>
+    </footer>
 </body>
 </html>
